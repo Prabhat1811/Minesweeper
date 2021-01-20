@@ -204,6 +204,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
+    function addClass(has, toAdd) {
+        let element = document.getElementsByClassName(has)[0]
+        element.classList += toAdd
+    }
+
     document.querySelectorAll('.box-layer-2-style').forEach(item => {
         item.addEventListener('click', function () {
             index = getIndex(item)
@@ -223,6 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.getElementsByClassName("container-layer-2")[0].remove()
                 noClass('time')
                 printWinLose('You Lose')
+                addClass('container', ' shake')
                 console.log('Game Lost')
             }
         })
