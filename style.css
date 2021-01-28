@@ -54,6 +54,7 @@ body{
 
 .box-layer-2-style{
     background-color: rgb(163, 163, 163);
+    cursor:pointer;
 }
 
 .bomb{
